@@ -1,0 +1,100 @@
+.title
+{
+    height: 25%;
+}
+
+/*4-4-4*/
+.pfp
+{
+    width: 100%;
+    height: 75%;
+}
+
+
+/*5-2-5*/
+.pfp
+{
+    width: 100%;
+    height: 75%;
+}
+
+#upper
+{
+    width: 100%;
+    height:50vh;
+    padding-bottom: 5%;
+}
+
+#down
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+    height:50vh;
+}
+
+.btn:hover, .link-none:hover
+{
+    filter: brightness(90%);
+    color: #ffffff;
+}
+
+.btn-discord
+{
+    background: #7289da;
+    color: #1e2124;
+}
+
+.btn-insta
+{
+    color: #ffffff;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+    
+.btn
+{
+    font-size: 1.3rem;
+}
+
+.btn-pixiv
+{
+    background: #0077c7;
+    color: #ffffff;
+}
+
+.btn-twitter
+{
+    background: #1DA1F2;
+    color: #ffffff;
+}
+
+.btn-artstation
+{
+    background: #14aff0;
+    color: #ffffff;
+}
+
+.btn-kofi
+{
+    background: #ff5e5b;
+    color: #ffffff;
+}
+
+.link-none
+{
+    text-decoration: none;
+}
+
+.link-none
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+::-webkit-scrollbar {
+    display:none;
+  }

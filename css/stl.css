@@ -1,105 +1,119 @@
-.title
-{
+.title {
     font-family: 'Bebas Neue', cursive;
     font-size: 4.7vmax;
     height: 25%;
 }
 
 /*4-4-4*/
-.pfp
-{
+.pfp {
     width: 100%;
     height: 75%;
 }
 
 /*5-2-5*/
-.pfp
-{
+.pfp {
     width: 100%;
     height: 75%;
 }
 
-#upper
-{
+#upper {
     width: 100%;
-    height:50vh;
+    height: 50vh;
 }
 
-#down
-{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+#down {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
     overflow-y: scroll;
-    height:50vh;
+    height: 50vh;
 }
 
-.btn:hover, .link-none:hover
-{
+.bg-card {}
+
+#card {
+    background: #d41c3d;
+    background: linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    background: -moz-linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    background: -webkit-linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D51C3E", endColorstr="#B9262B", GradientType=1);
+}
+
+.leftSpace {
+    background-image: url("../res/guuji_of_the_grand_narukami_shrine.png");
+    background-position-x: center;
+    background-size: cover;
+}
+
+.rightSpace {
+    background: url("../res/black_bird_manipulation.png");
+    background-position-x: 10%;
+    background-size: cover;
+}
+
+.side-card {
+    filter: brightness(0.9);
+    background-color: #d41c3d;
+}
+
+.btn:hover,
+.link-none:hover {
     filter: brightness(90%);
     color: #ffffff;
 }
 
-.btn:focus
-{
+.btn:focus {
     box-shadow: 0 0 0 !important;
 }
 
-.btn-discord
-{
+.btn-discord {
     background: #7289da;
     color: #1e2124;
 }
 
-.btn-insta
-{
+.btn-insta {
     color: #ffffff;
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
 }
-    
-.btn
-{
+
+.btn {
     font-size: 1.3rem;
 }
 
-.btn-pixiv
-{
+.btn-pixiv {
     background: #0077c7;
     color: #ffffff;
 }
 
-.btn-twitter
-{
+.btn-twitter {
     background: #1DA1F2;
     color: #ffffff;
 }
 
-.btn-artstation
-{
+.btn-artstation {
     background: #14aff0;
     color: #ffffff;
 }
 
-.btn-kofi
-{
+.btn-kofi {
     background: #ff5e5b;
     color: #ffffff;
 }
 
-.link-none
-{
+.link-none {
     text-decoration: none;
 }
 
-.link-none
-{
+.link-none {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 ::-webkit-scrollbar {
-    display:none;
-  }
+    display: none;
+}

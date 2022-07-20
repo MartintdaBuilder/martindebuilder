@@ -30,8 +30,6 @@
     height: 50vh;
 }
 
-.bg-card {}
-
 #card {
     background: #d41c3d;
     background: linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);

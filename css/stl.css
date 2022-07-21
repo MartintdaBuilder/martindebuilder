@@ -19,28 +19,53 @@
 }
 
 #card {
-    background: #d41c3d;
+    background-size: cover !important;
+    /*background: #f09433;
+    background: -moz-linear-gradient(90deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    background: -webkit-linear-gradient(90deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    background: linear-gradient(90deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
+    /*background: #d41c3d;
     background: linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
     background: -moz-linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
     background: -webkit-linear-gradient(45deg, hsla(349, 77%, 47%, 1) 13%, hsla(358, 66%, 44%, 1) 29%, hsla(147, 94%, 80%, 1) 94%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D51C3E", endColorstr="#B9262B", GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D51C3E", endColorstr="#B9262B", GradientType=1);*/
 }
 
-.leftSpace {
+#rightFilter,
+#leftFilter {
+    background: hsla(16, 100%, 76%, 1);
+    background: linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(270deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA585", endColorstr="#FFF68F", GradientType=1);
+    opacity: 80%;
+}
+
+#centerFilter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background: hsla(16, 100%, 76%, 1);
+    background: linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(270deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA585", endColorstr="#FFF68F", GradientType=1);
+    opacity: 80%;
+}
+
+#leftSpace {
     background-image: url("../res/guuji_of_the_grand_narukami_shrine.png");
-    background-position-x: center;
+    background-position-x: 50%;
+    background-position-y: 0;
     background-size: cover;
 }
 
-.rightSpace {
+#rightSpace {
     background: url("../res/black_bird_manipulation.png");
     background-position-x: 10%;
+    background-position-y: 0;
     background-size: cover;
-}
-
-.side-card {
-    filter: brightness(0.9);
-    background-color: #d41c3d;
 }
 
 .btn:hover,

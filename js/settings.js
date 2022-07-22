@@ -5,7 +5,7 @@ const titleColor = "white";
 const cardImage = {
     fileNameAndExt: "diamonds.png", //MIDDLE background
     fallbackColor: "white",
-    offsetX: 500,
+    offsetX: 0,
     offsetY: 0,
     mirror: false
 };
@@ -23,22 +23,22 @@ const rightImage = {
     fallbackColor: "deeppink",
     offsetX: 10,
     offsetY: 0,
-    mirror: false
+    mirror: true
 };
 
 const ROpFilter = {
     opacity: 80, //Set opacity to the RIGHT background
-    gradient: "linear-gradient(-90deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)"
+    gradient: "linear-gradient(45deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 const LOpFilter = {
     opacity: 80, //Set opacity to the LEFT background
-    gradient: "linear-gradient(-90deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)"
+    gradient: "linear-gradient(-90deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 const MOpFilter = {
     opacity: 80, //Set opacity to the MIDDLE background
-    gradient: "linear-gradient(-9090deg, hsla(0, 0%, 98%, 1) 0%, hsla(0, 0%, 0%, 1) 100%)"
+    gradient: "linear-gradient(-90deg, hsla(0, 0%, 98%, 1) 0%, hsla(0, 0%, 0%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 const buttons = [{

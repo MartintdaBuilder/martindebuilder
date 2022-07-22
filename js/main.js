@@ -62,11 +62,11 @@ function setSideBackground(obj, dataObj) {
 function setOpacityToFilter(obj, dataObj) {
     obj.opacity = dataObj.opacity + "%";
 
-    obj.background = dataObj.gradient;
-    obj.background = "-moz-" + dataObj.gradient;
-    obj.background = "-webkit-" + dataObj.gradient;
-    obj.background = "-ms-" + dataObj.gradient;
-    obj.background = "-o-" + dataObj.gradient;
+    obj.backgroundImage = dataObj.gradient;
+    obj.backgroundImage = "-moz-" + dataObj.gradient;
+    obj.backgroundImage = "-webkit-" + dataObj.gradient;
+    obj.backgroundImage = "-ms-" + dataObj.gradient;
+    obj.backgroundImage = "-o-" + dataObj.gradient;
 }
 
 setupSettings();

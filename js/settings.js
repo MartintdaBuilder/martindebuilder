@@ -1,6 +1,6 @@
-const title = "Martin the Builder";
+const title = "Martin the asdasd";
 //default color "#202529"
-const titleColor = "white";
+const titleColor = "red";
 
 const cardImage = {
 	fileNameAndExt: "diamonds.png",

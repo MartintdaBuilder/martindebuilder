@@ -1,8 +1,14 @@
 .title {
     font-family: 'Bebas Neue', cursive;
-    font-size: 4.7vmax;
+    font-size: 6vh;
     height: 25%;
     text-shadow: 4px 4px #3333338f;
+}
+
+@media (max-width: 350px) {
+    .title {
+        font-size: 4.5vh;
+    }
 }
 
 #upper {
@@ -32,21 +38,11 @@
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D51C3E", endColorstr="#B9262B", GradientType=1);*/
 }
 
-#rightFilter,
-#leftFilter {
-    background: hsla(16, 100%, 76%, 1);
-    background: linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
-    background: -webkit-linear-gradient(270deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA585", endColorstr="#FFF68F", GradientType=1);
-}
-
 #centerFilter {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -100;
-    opacity: 80%;
 }
 
 #leftSpace {
@@ -137,4 +133,21 @@
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
+}
+
+.pfp {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+}
+
+.pfp-border {
+    z-index: 50;
+    position: absolute;
+    width: 32vh;
+    /*border size*/
+    height: 32vh;
+    /*border size*/
+    transform: translate(-1vh, -1vh);
+    /*offset*/
 }

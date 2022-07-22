@@ -6,6 +6,14 @@ function setupSettings() {
     let leftSide = document.getElementById("leftSpace").style;
     let rightSide = document.getElementById("rightSpace").style;
 
+    let RFilter = document.getElementById("rightFilter").style;
+    let LFilter = document.getElementById("leftFilter").style;
+    let MFilter = document.getElementById("centerFilter").style;
+
+    setOpacityToFilter(RFilter, ROpFilter);
+    setOpacityToFilter(LFilter, LOpFilter);
+    setOpacityToFilter(MFilter, MOpFilter);
+
     setSideBackground(centerCard, cardImage);
     setSideBackground(leftSide, leftImage);
     setSideBackground(rightSide, rightImage);
@@ -37,9 +45,10 @@ function getAdditionalButtons() {
 
 function setBackground(obj, bg) {
     obj.style.background = bg;
-    obj.style.background = "-moz-" + bg;
-    obj.style.background = "-webkit-" + bg;
-    obj.style.background = "-moz-" + bg;
+    obj.style.backgroundImage = "-moz-" + bg;
+    obj.style.backgroundImage = "-webkit-" + bg;
+    obj.style.backgroundImage = "-ms-" + bg;
+    obj.style.backgroundImage = "-o-" + bg;
 }
 
 function setSideBackground(obj, dataObj) {
@@ -48,6 +57,16 @@ function setSideBackground(obj, dataObj) {
     obj.backgroundPositionX = dataObj.offsetX + "%";
     obj.backgroundPositionY = dataObj.offsetY + "%";
     obj.transform = "scaleX(" + -1 * ((dataObj.mirror * 2) - 1) + ")";
+}
+
+function setOpacityToFilter(obj, dataObj) {
+    obj.opacity = dataObj.opacity + "%";
+
+    obj.background = dataObj.gradient;
+    obj.background = "-moz-" + dataObj.gradient;
+    obj.background = "-webkit-" + dataObj.gradient;
+    obj.background = "-ms-" + dataObj.gradient;
+    obj.background = "-o-" + dataObj.gradient;
 }
 
 setupSettings();

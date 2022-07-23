@@ -151,3 +151,9 @@
     transform: translate(-1vh, -1vh);
     /*offset*/
 }
+
+@media (max-width: 430px) {
+    .title {
+        font-size: 4.5vh;
+    }
+}

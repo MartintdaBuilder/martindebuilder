@@ -28,6 +28,7 @@ const titleColor = "white";
 //PROFILE PICTURE AND BORDER
 //file and ext of the pfpf
 const profilePicture = "pfp.png";
+const pfpAnimation = "animate__fadeIn";
 const pfpBorder = {
     fileNameAndExt: "testborder.png",
     //better to keep it squere...

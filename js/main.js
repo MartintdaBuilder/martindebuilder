@@ -15,6 +15,7 @@ function setupSettings() {
     let MFilter = document.getElementById("centerFilter").style;
 
     setPfpAndBorder(pfp, borderPfp);
+    if(pfpAnimation != null) pfp.parentElement.classList.add(pfpAnimation);
 
     setOpacityToFilter(RFilter, ROpFilter);
     setOpacityToFilter(LFilter, LOpFilter);

@@ -4,7 +4,7 @@ function setupSettings() {
     document.getElementById("title").style.color = titleColor;
 
     let pfp = document.getElementById("pfp");
-    let pfpBorder = document.getElementById("pfp-border");
+    let borderPfp = document.getElementById("pfp-border");
 
     let centerCard = document.getElementById("card").style;
     let leftSide = document.getElementById("leftSpace").style;
@@ -14,7 +14,7 @@ function setupSettings() {
     let LFilter = document.getElementById("leftFilter").style;
     let MFilter = document.getElementById("centerFilter").style;
 
-    setPfpAndBorder(pfp, pfpBorder);
+    setPfpAndBorder(pfp, borderPfp);
 
     setOpacityToFilter(RFilter, ROpFilter);
     setOpacityToFilter(LFilter, LOpFilter);
@@ -70,15 +70,15 @@ function addIconsToButtons(button, icon) {
     else if (text.includes("pixiv")) {
         icon.setAttribute("data-icon", "arcticons:pixiv");
         button.appendChild(icon);
-    } 
+    }
     else if (text.includes("artstation")) {
         icon.setAttribute("data-icon", "cib:artstation");
         button.appendChild(icon);
     }
-     else if (text.includes("ko-fi")) {
+    else if (text.includes("ko-fi")) {
         icon.setAttribute("data-icon", "cib:ko-fi");
         button.appendChild(icon);
-    } 
+    }
     else if (text.includes("discord")) {
         icon.setAttribute("data-icon", "simple-icons:discord");
         button.appendChild(icon);
@@ -111,15 +111,19 @@ function setOpacityToFilter(obj, dataObj) {
     obj.backgroundImage = "-o-" + dataObj.gradient;
 }
 
-function setPfpAndBorder(pfp, border)
-{
+function setPfpAndBorder(pfp, border) {
     pfp.setAttribute("src", "res/" + profilePicture);
+
+    if (pfpBorder.fileNameAndExt == "" || pfpBorder.fileNameAndExt == null || pfpBorder.fileNameAndExt == " ") {
+        border.style.display = "none"
+        return;
+    }
 
     border.setAttribute("src", "res/" + pfpBorder.fileNameAndExt);
     border.style.width = pfpBorder.width + "vh";
     border.style.height = pfpBorder.height + "vh";
     border.style.transform = `Translate(${pfpBorder.offsetX}vh, ${pfpBorder.offsetY}vh)`;
-    
+
 }
 
 setupSettings();

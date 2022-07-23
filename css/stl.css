@@ -135,13 +135,13 @@
     /* Internet Explorer/Edge */
 }
 
-.pfp {
+#pfp {
     position: relative;
     width: 30vh;
     height: 30vh;
 }
 
-.pfp-border {
+#pfp-border {
     z-index: 50;
     position: absolute;
     width: 32vh;

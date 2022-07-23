@@ -124,4 +124,3 @@ function setPfpAndBorder(pfp, border)
 
 setupSettings();
 getAdditionalButtons();
-console.log();

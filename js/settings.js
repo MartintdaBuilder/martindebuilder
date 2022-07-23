@@ -11,6 +11,8 @@
 // DONT: fileNameAndExt: ,
 // DO:   fileNameAndExt: "",
 
+//USE THIS TO SEE AVAILABLE ANIMATIONS https://animate.style/#usage
+
 //IF YO WANT SOMETHIN EMPTY JUST LEAVE "" or 0 if number or 
 
 
@@ -25,7 +27,7 @@ const titleColor = "white";
 
 //PROFILE PICTURE AND BORDER
 //file and ext of the pfpf
-const profilePicture = "diamonds.png";
+const profilePicture = "diamonds.webp";
 const pfpBorder = {
     fileNameAndExt: "testborder.png",
     //better to keep it squere...
@@ -43,7 +45,7 @@ const pfpBorder = {
 //the background of the center card
 const cardImage = {
     //DONT FOGET THE FILE EXTENCION
-    fileNameAndExt: "diamonds.png", //MIDDLE background
+    fileNameAndExt: "diamonds.webp", //MIDDLE background
     //if for some reason the image is unavailable it will set this color for background
     //combined with the gradient eventualy
     fallbackColor: "white",
@@ -56,7 +58,7 @@ const cardImage = {
 
 //same like the chenter but for the left side of the screen
 const leftImage = {
-    fileNameAndExt: "guuji_of_the_grand_narukami_shrine.png", //LEFT background
+    fileNameAndExt: "guuji_of_the_grand_narukami_shrine.webp", //LEFT background
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,
@@ -65,7 +67,7 @@ const leftImage = {
 
 //same like the chenter but for the left side of the screen
 const rightImage = {
-    fileNameAndExt: "black_bird_manipulation.png", //RIGHT background
+    fileNameAndExt: "black_bird_manipulation.webp", //RIGHT background
     fallbackColor: "deeppink",
     offsetX: 10,
     offsetY: 0,
@@ -114,25 +116,30 @@ const buttons = [{
     //button color it can be gradient too
     btnColor: "#1da1f2",
     //color of the text
-    btnTextColor: "#ffffff"
+    btnTextColor: "#ffffff",
+    animation: "animate__bounceInLeft"
 }, {
     btnText: "Instagram",
     btnLink: "https://www.instagram.com/martindabuilder",
     btnColor: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-    btnTextColor: "#ffffff"
+    btnTextColor: "#ffffff",
+    animation: "animate__bounceInRight"
 }, {
     btnText: "Pixiv",
     btnLink: "https://www.pixiv.net/en/users/69814881",
     btnColor: "#0077c7",
-    btnTextColor: "#ffffff"
+    btnTextColor: "#ffffff",
+    animation: "animate__bounceInLeft"
 }, {
     btnText: "Ko-Fi",
     btnLink: "https://ko-fi.com/martinthebuilder80998#paypalModal",
     btnColor: "#ff5e5b",
-    btnTextColor: "#ffffff"
+    btnTextColor: "#ffffff",
+    animation: "animate__bounceInRight"
 }, {
     btnText: "Artstation",
     btnLink: "https://www.artstation.com/martinthebuilder",
     btnColor: "#14aff0",
-    btnTextColor: "#ffffff"
+    btnTextColor: "#ffffff",
+    animation: "animate__bounceInLeft"
 }];

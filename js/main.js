@@ -42,10 +42,12 @@ function getAdditionalButtons() {
         linkToAdd.classList.add("link-none", "w-75", "my-3");
 
         buttonToAdd.type = "button";
-        buttonToAdd.classList.add("btn", "rounded-pill", "py-3", "w-100");
+        buttonToAdd.classList.add("btn", "rounded-pill", "py-3", "w-100", 'animate__animated');
         buttonToAdd.textContent = button.btnText;
 
         setBackground(buttonToAdd, button.btnColor);
+
+        if(button.animation != null) buttonToAdd.classList.add(button.animation);
 
         buttonToAdd.style.color = button.btnTextColor;
 
@@ -123,7 +125,6 @@ function setPfpAndBorder(pfp, border) {
     border.style.width = pfpBorder.width + "vh";
     border.style.height = pfpBorder.height + "vh";
     border.style.transform = `Translate(${pfpBorder.offsetX}vh, ${pfpBorder.offsetY}vh)`;
-
 }
 
 setupSettings();

@@ -1,6 +1,10 @@
 function setupSettings() {
+    document.querySelector("title").textContent = title;
     document.getElementById("title").textContent = title;
     document.getElementById("title").style.color = titleColor;
+
+    let pfp = document.getElementById("pfp");
+    let pfpBorder = document.getElementById("pfp-border");
 
     let centerCard = document.getElementById("card").style;
     let leftSide = document.getElementById("leftSpace").style;
@@ -9,6 +13,8 @@ function setupSettings() {
     let RFilter = document.getElementById("rightFilter").style;
     let LFilter = document.getElementById("leftFilter").style;
     let MFilter = document.getElementById("centerFilter").style;
+
+    setPfpAndBorder(pfp, pfpBorder);
 
     setOpacityToFilter(RFilter, ROpFilter);
     setOpacityToFilter(LFilter, LOpFilter);
@@ -24,6 +30,11 @@ function getAdditionalButtons() {
     buttons.forEach(button => {
         let linkToAdd = document.createElement("a");
         let buttonToAdd = document.createElement("button");
+        let icon = document.createElement("span");
+
+        icon.classList.add('iconify', 'mx-2');
+        icon.setAttribute("data-width", 25);
+        icon.setAttribute("data-height", 25);
 
         linkToAdd.href = button.btnLink;
         linkToAdd.draggable = false;
@@ -38,9 +49,40 @@ function getAdditionalButtons() {
 
         buttonToAdd.style.color = button.btnTextColor;
 
+        addIconsToButtons(buttonToAdd, icon);
+
         buttonList.appendChild(linkToAdd);
         buttonList.lastChild.appendChild(buttonToAdd);
     });
+}
+
+function addIconsToButtons(button, icon) {
+    let text = button.textContent.toLowerCase();
+    // '<span class="iconify" data-icon="ant-design:twitter-circle-filled" data-width="25" data-height="25"></span>';
+    if (text.includes("twitter")) {
+        icon.setAttribute("data-icon", "ant-design:twitter-circle-filled");
+        button.appendChild(icon);
+    }
+    else if (text.includes("instagram")) {
+        icon.setAttribute("data-icon", "ant-design:instagram");
+        button.appendChild(icon);
+    }
+    else if (text.includes("pixiv")) {
+        icon.setAttribute("data-icon", "arcticons:pixiv");
+        button.appendChild(icon);
+    } 
+    else if (text.includes("artstation")) {
+        icon.setAttribute("data-icon", "cib:artstation");
+        button.appendChild(icon);
+    }
+     else if (text.includes("ko-fi")) {
+        icon.setAttribute("data-icon", "cib:ko-fi");
+        button.appendChild(icon);
+    } 
+    else if (text.includes("discord")) {
+        icon.setAttribute("data-icon", "simple-icons:discord");
+        button.appendChild(icon);
+    }
 }
 
 function setBackground(obj, bg) {
@@ -67,6 +109,17 @@ function setOpacityToFilter(obj, dataObj) {
     obj.backgroundImage = "-webkit-" + dataObj.gradient;
     obj.backgroundImage = "-ms-" + dataObj.gradient;
     obj.backgroundImage = "-o-" + dataObj.gradient;
+}
+
+function setPfpAndBorder(pfp, border)
+{
+    pfp.setAttribute("src", "res/" + profilePicture);
+
+    border.setAttribute("src", "res/" + pfpBorder.fileNameAndExt);
+    border.style.width = pfpBorder.width + "vh";
+    border.style.height = pfpBorder.height + "vh";
+    border.style.transform = `Translate(${pfpBorder.offsetX}vh, ${pfpBorder.offsetY}vh)`;
+    
 }
 
 setupSettings();

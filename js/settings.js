@@ -27,10 +27,10 @@ const titleColor = "white";
 
 //PROFILE PICTURE AND BORDER
 //file and ext of the pfpf
-const profilePicture = "pfp.png";
+const profilePicture = "diamonds.webp";
 const pfpAnimation = "animate__fadeIn";
 const pfpBorder = {
-    fileNameAndExt: "testborder.png",
+    fileNameAndExt: "",
     //better to keep it squere...
     width: 32,
     height: 32,
@@ -46,7 +46,7 @@ const pfpBorder = {
 //the background of the center card
 const cardImage = {
     //DONT FOGET THE FILE EXTENCION
-    fileNameAndExt: "pfp.png", //MIDDLE background
+    fileNameAndExt: "diamonds.webp", //MIDDLE background
     //if for some reason the image is unavailable it will set this color for background
     //combined with the gradient eventualy
     fallbackColor: "white",
@@ -59,7 +59,7 @@ const cardImage = {
 
 //same like the chenter but for the left side of the screen
 const leftImage = {
-    fileNameAndExt: "yae.png", //LEFT background
+    fileNameAndExt: "guuji_of_the_grand_narukami_shrine.webp", //LEFT background
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,
@@ -68,7 +68,7 @@ const leftImage = {
 
 //same like the chenter but for the left side of the screen
 const rightImage = {
-    fileNameAndExt: "mommy.png", //RIGHT background
+    fileNameAndExt: "black_bird_manipulation.webp", //RIGHT background
     fallbackColor: "deeppink",
     offsetX: 10,
     offsetY: 0,

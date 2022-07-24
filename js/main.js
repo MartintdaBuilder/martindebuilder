@@ -43,7 +43,7 @@ function getAdditionalButtons() {
         linkToAdd.classList.add("link-none", "w-75", "my-3");
 
         buttonToAdd.type = "button";
-        buttonToAdd.classList.add("btn", "rounded-pill", "py-3", "w-100", 'animate__animated');
+        buttonToAdd.classList.add("btn", "rounded-pill", "py-2", "w-100", 'animate__animated');
         buttonToAdd.textContent = button.btnText;
 
         setBackground(buttonToAdd, button.btnColor);

@@ -63,12 +63,12 @@ const leftImage = {
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,
-    mirror: false
+    mirror: true
 };
 
 //same like the chenter but for the left side of the screen
 const rightImage = {
-    fileNameAndExt: "cock.webp", //RIGHT background
+    fileNameAndExt: "arlecchino.webp", //RIGHT background
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,

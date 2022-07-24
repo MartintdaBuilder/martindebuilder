@@ -133,6 +133,7 @@
     position: relative;
     width: 30vh;
     height: 30vh;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
 }
 
 #pfp-border {
@@ -148,6 +149,6 @@
 
 @media (max-width: 430px) {
     .title {
-        font-size: 4.5vh;
+        font-size: 5.5vh;
     }
 }

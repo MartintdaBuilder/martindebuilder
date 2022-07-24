@@ -59,7 +59,7 @@ const cardImage = {
 
 //same like the chenter but for the left side of the screen
 const leftImage = {
-    fileNameAndExt: "guuji_of_the_grand_narukami_shrine.webp", //LEFT background
+    fileNameAndExt: "cock.webp", //LEFT background
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,

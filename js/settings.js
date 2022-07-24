@@ -85,21 +85,21 @@ const rightImage = {
 
 const ROpFilter = {
     opacity: 80, //Set opacity to the RIGHT background
-    gradient: "linear-gradient(-90deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
+    gradient: "linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(253, 77%, 58%, 1) 61%, hsla(320, 77%, 55%, 1) 87%, hsla(316, 41%, 93%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 //LEFT FILTER
 
 const LOpFilter = {
     opacity: 80, //Set opacity to the LEFT background
-    gradient: "linear-gradient(-90deg, hsla(147, 94%, 80%, 1) 0%, hsla(349, 77%, 47%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
+    gradient: "linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(185, 77%, 59%, 1) 19%, hsla(133, 68%, 75%, 1) 91%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 //CENTER/MIDDLE FILTER
 
 const MOpFilter = {
     opacity: 80, //Set opacity to the MIDDLE background
-    gradient: "linear-gradient(-90deg, hsla(0, 0%, 98%, 1) 0%, hsla(0, 0%, 0%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
+    gradient: "linear-gradient(0deg, hsla(213, 77%, 14%, 1) 9%, hsla(202, 35%, 66%, 1) 79%, hsla(202, 44%, 85%, 1) 98%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -118,29 +118,29 @@ const buttons = [{
     btnColor: "#1da1f2",
     //color of the text
     btnTextColor: "#ffffff",
-    animation: "animate__bounceInLeft"
+    animation: "animate__fadeIn"
 }, {
     btnText: "Instagram",
     btnLink: "https://www.instagram.com/martindabuilder",
     btnColor: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
     btnTextColor: "#ffffff",
-    animation: "animate__bounceInRight"
+    animation: "animate__fadeIn"
 }, {
     btnText: "Pixiv",
     btnLink: "https://www.pixiv.net/en/users/69814881",
     btnColor: "#0077c7",
     btnTextColor: "#ffffff",
-    animation: "animate__bounceInLeft"
+    animation: "animate__fadeIn"
 }, {
     btnText: "Ko-Fi",
     btnLink: "https://ko-fi.com/martinthebuilder80998#paypalModal",
     btnColor: "#ff5e5b",
     btnTextColor: "#ffffff",
-    animation: "animate__bounceInRight"
+    animation: "animate__fadeIn"
 }, {
     btnText: "Artstation",
     btnLink: "https://www.artstation.com/martinthebuilder",
     btnColor: "#14aff0",
     btnTextColor: "#ffffff",
-    animation: "animate__bounceInLeft"
+    animation: "animate__fadeIn"
 }];

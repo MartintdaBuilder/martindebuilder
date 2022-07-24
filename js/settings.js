@@ -72,7 +72,7 @@ const rightImage = {
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,
-    mirror: true
+    mirror: false
 };
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -84,14 +84,14 @@ const rightImage = {
 //RIGHT FILTER
 
 const ROpFilter = {
-    opacity: 80, //Set opacity to the RIGHT background
+    opacity: 35, //Set opacity to the RIGHT background
     gradient: "linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(253, 77%, 58%, 1) 61%, hsla(320, 77%, 55%, 1) 87%, hsla(316, 41%, 93%, 1) 100%)" //To mirror the gradient place a "-" befor the "deg"
 };
 
 //LEFT FILTER
 
 const LOpFilter = {
-    opacity: 80, //Set opacity to the LEFT background
+    opacity: 35, //Set opacity to the LEFT background
     gradient: "linear-gradient(90deg, hsla(189, 100%, 50%, 1) 0%, hsla(185, 77%, 59%, 1) 19%, hsla(133, 68%, 75%, 1) 91%)" //To mirror the gradient place a "-" befor the "deg"
 };
 

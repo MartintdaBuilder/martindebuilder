@@ -68,9 +68,9 @@ const leftImage = {
 
 //same like the chenter but for the left side of the screen
 const rightImage = {
-    fileNameAndExt: "black_bird_manipulation.webp", //RIGHT background
+    fileNameAndExt: "cock.webp", //RIGHT background
     fallbackColor: "deeppink",
-    offsetX: 10,
+    offsetX: 50,
     offsetY: 0,
     mirror: true
 };

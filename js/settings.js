@@ -59,7 +59,7 @@ const cardImage = {
 
 //same like the chenter but for the left side of the screen
 const leftImage = {
-    fileNameAndExt: "cock.webp", //LEFT background
+    fileNameAndExt: "ssa.webp", //LEFT background
     fallbackColor: "deeppink",
     offsetX: 50,
     offsetY: 0,

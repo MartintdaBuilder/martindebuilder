@@ -116,31 +116,31 @@ const buttons = [{
     btnLink: "https://twitter.com/martindabuilder",
     //button color it can be gradient too
     btnColor: "#1da1f2",
-    //color of the text
-    btnTextColor: "#ffffff",
+    //if you set color to gradiet select a fallback color cus text cant be gradient or it can be for 2.99$ a mounth
+    btnFallbackColor: "#1da1f2",
     animation: "animate__fadeIn"
 }, {
     btnText: "Instagram",
     btnLink: "https://www.instagram.com/martindabuilder",
     btnColor: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-    btnTextColor: "#ffffff",
+    btnFallbackColor: "#f50401",
     animation: "animate__fadeIn"
 }, {
     btnText: "Pixiv",
     btnLink: "https://www.pixiv.net/en/users/69814881",
     btnColor: "#0077c7",
-    btnTextColor: "#ffffff",
+    btnFallbackColor: "#0077c7",
     animation: "animate__fadeIn"
 }, {
     btnText: "Ko-Fi",
     btnLink: "https://ko-fi.com/martinthebuilder80998#paypalModal",
     btnColor: "#ff5e5b",
-    btnTextColor: "#ffffff",
+    btnFallbackColor: "#ff5e5b",
     animation: "animate__fadeIn"
 }, {
     btnText: "Artstation",
     btnLink: "https://www.artstation.com/martinthebuilder",
     btnColor: "#14aff0",
-    btnTextColor: "#ffffff",
+    btnFallbackColor: "#14aff0",
     animation: "animate__fadeIn"
 }];

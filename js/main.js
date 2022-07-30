@@ -46,12 +46,16 @@ function getAdditionalButtons() {
         buttonToAdd.classList.add("btn", "rounded-pill", "py-2", "w-100", 'animate__animated');
         buttonToAdd.textContent = button.btnText;
 
-        setBackground(buttonToAdd, button.btnColor);
-
         if(button.animation != null) buttonToAdd.classList.add(button.animation);
 
-        buttonToAdd.style.color = button.btnTextColor;
-
+        setDefaultBackground(buttonToAdd, button);
+        buttonToAdd.addEventListener('mouseover', function( event ) {
+            setBackground(event.target, button);
+        }, false);
+        buttonToAdd.addEventListener('mouseout', function( event ) {
+            setDefaultBackground(event.target, button);
+        }, false);
+       
         addIconsToButtons(buttonToAdd, icon);
 
         buttonList.appendChild(linkToAdd);
@@ -59,41 +63,49 @@ function getAdditionalButtons() {
     });
 }
 
-function addIconsToButtons(button, icon) {
-    let text = button.textContent.toLowerCase();
+function addIconsToButtons(obj, icon) {
+    let text = obj.textContent.toLowerCase();
     // '<span class="iconify" data-icon="ant-design:twitter-circle-filled" data-width="25" data-height="25"></span>';
     if (text.includes("twitter")) {
         icon.setAttribute("data-icon", "ant-design:twitter-circle-filled");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
     else if (text.includes("instagram")) {
         icon.setAttribute("data-icon", "ant-design:instagram");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
     else if (text.includes("pixiv")) {
         icon.setAttribute("data-icon", "arcticons:pixiv");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
     else if (text.includes("artstation")) {
         icon.setAttribute("data-icon", "cib:artstation");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
     else if (text.includes("ko-fi")) {
         icon.setAttribute("data-icon", "cib:ko-fi");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
     else if (text.includes("discord")) {
         icon.setAttribute("data-icon", "simple-icons:discord");
-        button.appendChild(icon);
+        obj.appendChild(icon);
     }
 }
 
-function setBackground(obj, bg) {
-    obj.style.background = bg;
-    obj.style.backgroundImage = "-moz-" + bg;
-    obj.style.backgroundImage = "-webkit-" + bg;
-    obj.style.backgroundImage = "-ms-" + bg;
-    obj.style.backgroundImage = "-o-" + bg;
+function setDefaultBackground(obj, btninfo)
+{
+    obj.setAttribute('style', `background: white; background-image: white; color: ${btninfo.btnFallbackColor}; color: ${btninfo.btnColor};`);
+}
+
+function setBackground(obj, btninfo) {
+    obj.setAttribute('style', `
+    background: ${btninfo.btnColor};
+    background-image: -moz-${btninfo.btnColor};
+    background-image: -webkit-${btninfo.btnColor};
+    background-image: -ms-${btninfo.btnColor};
+    background-image: -o-${btninfo.btnColor};
+    color:white;
+    `);
 }
 
 function setSideBackground(obj, dataObj) {

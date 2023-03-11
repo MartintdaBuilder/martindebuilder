@@ -27,7 +27,7 @@ const titleColor = "white";
 
 //PROFILE PICTURE AND BORDER
 //file and ext of the pfpf
-const profilePicture = "diamonds.webp";
+const profilePicture = "it_has_to_be_this_way.png";
 const pfpAnimation = "animate__fadeIn";
 const pfpBorder = {
     fileNameAndExt: "",
@@ -46,7 +46,7 @@ const pfpBorder = {
 //the background of the center card
 const cardImage = {
     //DONT FOGET THE FILE EXTENCION
-    fileNameAndExt: "diamonds.webp", //MIDDLE background
+    fileNameAndExt: "it_has_to_be_this_way.png", //MIDDLE background
     //if for some reason the image is unavailable it will set this color for background
     //combined with the gradient eventualy
     fallbackColor: "white",
@@ -59,8 +59,8 @@ const cardImage = {
 
 //same like the chenter but for the left side of the screen
 const leftImage = {
-    fileNameAndExt: "ssa.webp", //LEFT background
-    fallbackColor: "deeppink",
+    fileNameAndExt: "bury_the_light.png", //LEFT background
+    fallbackColor: "MidnightBlue",
     offsetX: 50,
     offsetY: 0,
     mirror: true
@@ -68,8 +68,8 @@ const leftImage = {
 
 //same like the chenter but for the left side of the screen
 const rightImage = {
-    fileNameAndExt: "arlecchino.webp", //RIGHT background
-    fallbackColor: "deeppink",
+    fileNameAndExt: "order_of_silence.png", //RIGHT background
+    fallbackColor: "BlueViolet",
     offsetX: 50,
     offsetY: 0,
     mirror: false
